@@ -1,0 +1,1 @@
+mc cp --recursive "s3/projet-ape/sirene db/base_sirene_ape.parquet" ./
