@@ -23,7 +23,7 @@ def sample_data(df_path: str, n_lines: str):
     last_date = df['date_modification_dt'].max().strftime("%Y%m%d")
 
     # Supprimer la colonne datetime si elle existe, après traitement (pour traitement ultérieur JSON)
-    if 'date_column' in random_rows.columns:
+    if 'date_modification_dt' in random_rows.columns:
         random_rows = random_rows.drop('date_modification_dt', axis=1)
 
     # Sauvegarder le résultat dans un nouveau fichier Parquet
